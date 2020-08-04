@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Smiley Face</title>
+		<meta charset="utf-8" />
+		<style>
+			canvas {
+				border: 1px solid black;
+			}
+		</style>
+		<script>
+			window.onload = drawSmileyFace;
+
+			function drawSmileyFace() {
+				var canvas = document.getElementById("smiley");
+				var context = canvas.getContext("2d");
+
+				context.beginPath();
+				context.arc(300, 300, 200, 0, degreesToRadians(360), true);
+				context.fillStyle = "#ffffcc";
+				context.fill();
+				context.stroke();
+
+				context.beginPath();
+				context.arc(200, 250, 25, 0, degreesToRadians(360), true);
+				context.stroke();
+
+				context.beginPath();
+				context.arc(400, 250, 25, 0, degreesToRadians(360), true);
+				context.stroke();
+
+				context.beginPath();
+				context.arc(200, 250, 5, 0, degreesToRadians(360), true);
+				context.fillStyle = "black";
+				context.fill();
+
+				context.beginPath();
+				context.arc(400, 250, 5, 0, degreesToRadians(360), true);
+				context.fillStyle = "black";
+				context.fill();
+
+				context.beginPath();
+				context.moveTo(300, 300);
+				context.lineTo(300, 350);
+				context.stroke();
+
+				context.beginPath();
+				context.arc(300, 350, 75, degreesToRadians(20), degreesToRadians(160), false);
+				context.stroke();
+
+				function degreesToRadians(degrees) {
+					radians = (degrees * Math.PI) / 180;
+					return radians;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<canvas width="600" height="600" id="smiley">
+			<p>You need canvas!</p>
+			<p>
+				This example requires a browser that supports the
+				<a href="http://www.w3.org/html/wg/html5/">HTML5</a>
+				&lt;canvas&gt; feature.
+			</p>
+		</canvas>
+	</body>
+</html>

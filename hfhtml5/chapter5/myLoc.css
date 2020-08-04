@@ -1,0 +1,55 @@
+@media (min-width: 0px) {
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 10px;
+		text-align: center;
+	}
+	form,
+	div#location,
+	div#distance {
+		padding: 5px;
+	}
+
+	#top {
+		padding-bottom: 3%;
+	}
+
+	#form {
+		padding-top: 3%;
+	}
+
+	div#map {
+		margin-left: 8%;
+		width: 50em;
+		height: 50em;
+		border: 1px solid black;
+	}
+}
+
+@media (min-width: 1000px) {
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 10px;
+		text-align: center;
+	}
+	form,
+	div#location,
+	div#distance {
+		padding: 5px;
+	}
+
+	#top {
+		padding-bottom: 1.5%;
+	}
+
+	#form {
+		padding-top: 1.5%;
+	}
+
+	div#map {
+		margin-left: 27.5%;
+		width: 40em;
+		height: 40em;
+		border: 1px solid black;
+	}
+}

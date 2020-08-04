@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Word printer</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="printer.css" />
+		<script src="printer.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Online Printer!</h1>
+			<p>
+				Type an input into the "input" box and click on one of the buttons below. Their
+				names correspond with the speed at which your input will be printed.
+			</p>
+		</header>
+		<input type="text" id="input" placeholder="Type the input here" size="50" />
+		<div id="buttons" class="tablerow">
+			<input type="button" value="Slow" id="slow" class="button" />
+			<input type="button" value="Medium" id="medium" class="button" />
+			<input type="button" value="Fast" id="fast" class="button" />
+		</div>
+		<ul id="output"></ul>
+	</body>
+</html>

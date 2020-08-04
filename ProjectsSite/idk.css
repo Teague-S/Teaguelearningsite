@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #c2c8ce;
+}
+
+#title {
+    font-family: 'Bree Serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.8em;
+    color: #000000;
+    padding-bottom: 30px;
+    /*border: thin black solid;*/
+}
+
+.product, #frq, #about, #contact, #copyright {
+    font-family: 'Noto Sans JP', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #313530;
+}
+
+.product {
+    width: 170px;
+    text-align: center;
+    margin-left: 110px;
+    margin-right: 110px;
+    line-height: 1.3em;
+    text-align: center;
+    /*border: thin black solid;*/
+}
+
+img {
+    width: 170px;
+}
+
+#product3 {
+    float: right;
+    margin-left: 4px;
+    text-align: center;
+}
+
+#product2 {
+    float: right;
+    text-align: center;
+}
+
+#product1 {
+    text-align: center;
+    width: 170px;
+}
+
+#fg  {
+    width: 170px;
+    text-align: center;
+
+}
+
+#frq {
+    padding-top: .1px;
+    line-height: 1.9em;
+    margin-left: 150px;
+    margin-right: 50px;
+    width: 360px;
+    /*border: thin black solid;*/
+}
+
+#about {
+    float: right;
+    margin-right: 50px;
+    margin-left: 50px;
+    line-height: 1.9em;
+    width: 400px;
+    /*border: thin black solid;*/
+}
+
+#contact {
+    text-align: center;
+}
+
+#copyright {
+    text-align: center;
+    font-size: .6em;
+    font-weight: bolder;
+}
+
+#items {
+    padding-bottom: 50px;
+}
+
+#bottom {
+    padding-bottom: 50px;
+}
+
+a:hover {
+    background-color: crimson;
+}
+
+.bold {
+    font-weight: bolder;
+}

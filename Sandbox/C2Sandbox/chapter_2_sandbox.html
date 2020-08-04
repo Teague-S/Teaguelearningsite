@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>The button</title>
+		<link rel="stylesheet" href="sandbox.css" />
+		<script>
+			window.onload = theButton;
+			function theButton() {
+				var button = document.getElementById("inputButton");
+				button.onclick = deathCause;
+			}
+
+			function deathCause() {
+				var reasoning = document.getElementById("inputDeth");
+				var explain = reasoning.value;
+
+				if (explain == "") {
+					alert("You pressed the button with no input, things are still ok");
+				} else {
+					var li = document.createElement("li");
+					li.innerHTML = "You have doomed us by saying:   " + explain;
+					var ul = document.getElementById("output");
+					ul.appendChild(li);
+					alert("YOU HAVE DOOMED US ALL!");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Please, for the love of god, do not press the button!</h1>
+		<form>
+			<input
+				type="text"
+				id="inputDeth"
+				size="100"
+				placeholder="Do not put an input here"
+			/>
+			<input type="button" id="inputButton" value="Do not click me" />
+		</form>
+
+		<ul id="output"></ul>
+	</body>
+</html>
