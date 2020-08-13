@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Note to Self</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
+		<link rel="stylesheet" href="notetoself.css" />
+		<script src="notetoself4.js"></script>
+	</head>
+	<body>
+		<form>
+			<h1>Click a sticky note to delete it</h1>
+			<label for="note_color">Color: </label>
+			<select id="note_color">
+				<option value="LightGoldenRodYellow">Yellow</option>
+				<option value="PaleGreen">Green</option>
+				<option value="LightPink">Pink</option>
+				<option value="LightBlue">Blue</option>
+			</select>
+			<label for="note_text">Text: </label>
+			<input type="text" id="note_text" />
+			<input type="button" id="add_button" value="Add Sticky Note to Self" />
+		</form>
+
+		<ul id="stickies"></ul>
+	</body>
+</html>
