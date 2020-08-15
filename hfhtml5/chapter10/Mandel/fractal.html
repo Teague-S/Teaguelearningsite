@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Fractal Explorer</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="fractal.css" />
+		<script src="help.js"></script>
+		<script src="mandellib.js"></script>
+		<script src="mandel.js"></script>
+	</head>
+	<body>
+		<h2 id="help" onclick="popup()">Help</h2>
+
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>
+					Click anywhere on the page to zoom in, reload the page to restart the zoom.
+				</p>
+			</div>
+		</div>
+
+		<canvas id="fractal" width="800" height="600"></canvas>
+	</body>
+</html>
