@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Car Constructor</title>
+		<script>
+			function Car(params) {
+				this.make = params.make;
+				this.model = params.model;
+				this.year = params.year;
+				this.color = params.color;
+				this.passengers = params.passengers;
+				this.convertible = params.convertible;
+				this.mileage = params.mileage;
+				this.started = false;
+				this.start = function () {
+					this.started = true;
+				};
+				this.stop = function () {
+					this.started = false;
+				};
+				this.drive = function () {
+					if (this.started) {
+						console.log(this.make + " " + this.model + " goes zoom zoom zoom!");
+					} else {
+						console.log("Start the engine first.");
+					}
+				};
+			}
+
+			var fiat = new Car("Fiat", "500", 1957, "Medium Blue", 2, false, 88000);
+
+			var cadiParams = {
+				make: "GM",
+				model: "Cadillac",
+				year: 1955,
+				color: "tan",
+				passengers: 5,
+				convertible: false,
+				mileage: 12892,
+			};
+
+			var chevyParams = {
+				make: "Chevy",
+				model: "Bel Air",
+				year: 1957,
+				color: "red",
+				passengers: 2,
+				convertible: false,
+				mileage: 1021,
+			};
+
+			var taxiParams = {
+				make: "Webville Motors",
+				model: "Taxi",
+				year: 1955,
+				color: "yellow",
+				passengers: 4,
+				convertible: false,
+				mileage: 281341,
+			};
+
+			var fiatParams = {
+				make: "Fiat",
+				model: 500,
+				year: 1957,
+				color: "Medium Blue",
+				passengers: 2,
+				convertible: false,
+				mileage: 88000,
+			};
+
+			var cadi = new Car(cadiParams);
+			var chevy = new Car(chevyParams);
+			var taxi = new Car(taxiParams);
+			var fiat = new Car(fiatParams);
+
+			var cars = [chevy, cadi, taxi, fiat];
+
+			for (var i = 0; i < cars.length; i++) {
+				cars[i].start();
+				cars[i].drive();
+				cars[i].drive();
+				cars[i].stop();
+			}
+		</script>
+	</head>
+	<body></body>
+</html>
